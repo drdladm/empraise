@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title> Empraise: An essential resource kit for employees !! </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <h1> <u>Empraise</u></h1>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="topics.html">Topics</a>
+            <a href="source.html">Info-Source</a>
+          </div>
+        
+        <div class="row">
+            <div class ="main">
+            
+        Welcome to Empraise - An essential information resorce for employees
+        </div>
+            <div class="column">
+              <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Feb 1, 2021</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              </div>
+            </div>
+        </div>
+        <form>
+            <input type="button" onclick="fnadd()" value="Submit"/>
+            <input type ="button" onclick ="fnread()" value="Get Data"/>
+            <p id="readdata">
+
+            </p>
+        </form>
+        
+  
+    <script>
+    
+    </script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC8hPKELX8hwwJ5XPmklwy3KWEyES1KbDQ",
+    authDomain: "emp-raise.firebaseapp.com",
+    projectId: "emp-raise",
+    storageBucket: "emp-raise.appspot.com",
+    messagingSenderId: "99705027688",
+    appId: "1:99705027688:web:f8a6d3e1f426a5e800cfdd",
+    measurementId: "G-9DNTWN67H0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+// Initialize Cloud Firestore through Firebase
+firebase.initializeApp({
+  apiKey: 'AIzaSyC8hPKELX8hwwJ5XPmklwy3KWEyES1KbDQ',
+  authDomain: 'emp-raise.firebaseapp.com',
+  projectId: 'emp-raise'
+});
+</script>
+
+<script src="main.js"></script>
+       
+    </body>
+</html>

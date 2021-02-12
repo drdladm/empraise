@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title> Empraise: An essential resource kit for employees !! </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <h1> <u>Empraise</u></h1>
+    </head>
+    <body>
+        <div class="topnav">
+          <a href="index.html">Home</a>
+          <a href="topics.html">Topics</a>
+          <a href="source.html">Info-Source</a>
+          </div>
+        
+        <div class="row">
+            <div class ="main">
+            
+        Choose topics:
+        </div>
+            <div class="column">
+              <div class="card">
+                <h2>Add Questions</h2>
+                <h5>Title description, Feb 1, 2021</h5>
+                
+                <p>Add Question</p>
+                <p>
+                  Add question
+                </p>
+              </div>
+            </div>
+        </div>
+        <form>
+            <label for="topics">Choose a Topic:</label>
+            <select id="topic" name="topics" size="3">
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+            <option value="Sanskrit">History</option>
+            <option value="Science">Science</option>
+            </select>
+            <label for="topics">Question Text :</label> <input type ="textarea" id ="qtext"/> </br>
+            <label for="topics">Option (A) :</label><input type ="text" id ="Option1"/> </br>
+            <label for="topics">Option (B) :</label><input type ="text" id ="Option2"/> </br>
+            <label for="topics">Option (C) :</label><input type ="text" id ="Option3"/> </br>
+            <label for="topics">Option (D) :</label><input type ="text" id ="Option4"/> </br>
+            <label for="topics">ANSWER :</label><input type ="text" id ="anstext"/> </br>
+            <input type="button" onclick="AddQue()" value="Submit"/> 
+            <input type ="button" onclick ="GetQue()" value="Get Questions"/>
+            <p id="readdata">
+              
+            </p>
+            <p id="chTopic">
+            </p>
+              
+        </form>
+        
+  
+    <script>
+    
+    </script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC8hPKELX8hwwJ5XPmklwy3KWEyES1KbDQ",
+    authDomain: "emp-raise.firebaseapp.com",
+    projectId: "emp-raise",
+    storageBucket: "emp-raise.appspot.com",
+    messagingSenderId: "99705027688",
+    appId: "1:99705027688:web:f8a6d3e1f426a5e800cfdd",
+    measurementId: "G-9DNTWN67H0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+// Initialize Cloud Firestore through Firebase
+firebase.initializeApp({
+  apiKey: 'AIzaSyC8hPKELX8hwwJ5XPmklwy3KWEyES1KbDQ',
+  authDomain: 'emp-raise.firebaseapp.com',
+  projectId: 'emp-raise'
+});
+</script>
+
+<script src="topics.js"></script>
+       
+    </body>
+</html>
